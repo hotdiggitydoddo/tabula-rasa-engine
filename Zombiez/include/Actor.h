@@ -3,9 +3,9 @@
 #include <glm/glm.hpp>
 
 #include "Updatable.h"
-#include "Drawable.h"
+#include <TabulaRasa/Drawable.h>
 
-class Actor : public Drawable
+class Actor : public TabulaRasa::Drawable
 {
 public:
     Actor(glm::vec2 pos, const std::string& texturePath, float scale = 1, TabulaRasa::Color color = {255, 255, 255, 255});

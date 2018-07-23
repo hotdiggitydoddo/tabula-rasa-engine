@@ -179,60 +179,6 @@ src/Bullet.cpp.s:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Bullet.cpp.s
 .PHONY : src/Bullet.cpp.s
 
-src/Drawable.o: src/Drawable.cpp.o
-
-.PHONY : src/Drawable.o
-
-# target to build an object file
-src/Drawable.cpp.o:
-	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Drawable.cpp.o
-.PHONY : src/Drawable.cpp.o
-
-src/Drawable.i: src/Drawable.cpp.i
-
-.PHONY : src/Drawable.i
-
-# target to preprocess a source file
-src/Drawable.cpp.i:
-	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Drawable.cpp.i
-.PHONY : src/Drawable.cpp.i
-
-src/Drawable.s: src/Drawable.cpp.s
-
-.PHONY : src/Drawable.s
-
-# target to generate assembly for a file
-src/Drawable.cpp.s:
-	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Drawable.cpp.s
-.PHONY : src/Drawable.cpp.s
-
-src/GameObject.o: src/GameObject.cpp.o
-
-.PHONY : src/GameObject.o
-
-# target to build an object file
-src/GameObject.cpp.o:
-	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/GameObject.cpp.o
-.PHONY : src/GameObject.cpp.o
-
-src/GameObject.i: src/GameObject.cpp.i
-
-.PHONY : src/GameObject.i
-
-# target to preprocess a source file
-src/GameObject.cpp.i:
-	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/GameObject.cpp.i
-.PHONY : src/GameObject.cpp.i
-
-src/GameObject.s: src/GameObject.cpp.s
-
-.PHONY : src/GameObject.s
-
-# target to generate assembly for a file
-src/GameObject.cpp.s:
-	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/GameObject.cpp.s
-.PHONY : src/GameObject.cpp.s
-
 src/Level.o: src/Level.cpp.o
 
 .PHONY : src/Level.o
@@ -287,6 +233,33 @@ src/MainGame.cpp.s:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/MainGame.cpp.s
 .PHONY : src/MainGame.cpp.s
 
+src/Player.o: src/Player.cpp.o
+
+.PHONY : src/Player.o
+
+# target to build an object file
+src/Player.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Player.cpp.o
+.PHONY : src/Player.cpp.o
+
+src/Player.i: src/Player.cpp.i
+
+.PHONY : src/Player.i
+
+# target to preprocess a source file
+src/Player.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Player.cpp.i
+.PHONY : src/Player.cpp.i
+
+src/Player.s: src/Player.cpp.s
+
+.PHONY : src/Player.s
+
+# target to generate assembly for a file
+src/Player.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Player.cpp.s
+.PHONY : src/Player.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -329,18 +302,15 @@ help:
 	@echo "... src/Bullet.o"
 	@echo "... src/Bullet.i"
 	@echo "... src/Bullet.s"
-	@echo "... src/Drawable.o"
-	@echo "... src/Drawable.i"
-	@echo "... src/Drawable.s"
-	@echo "... src/GameObject.o"
-	@echo "... src/GameObject.i"
-	@echo "... src/GameObject.s"
 	@echo "... src/Level.o"
 	@echo "... src/Level.i"
 	@echo "... src/Level.s"
 	@echo "... src/MainGame.o"
 	@echo "... src/MainGame.i"
 	@echo "... src/MainGame.s"
+	@echo "... src/Player.o"
+	@echo "... src/Player.i"
+	@echo "... src/Player.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

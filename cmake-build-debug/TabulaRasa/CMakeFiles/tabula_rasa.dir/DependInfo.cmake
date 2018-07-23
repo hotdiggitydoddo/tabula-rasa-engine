@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Camera2D.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Camera2D.cpp.o"
+  "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o"
   "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Errors.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Errors.cpp.o"
   "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GLSLProgram.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GLSLProgram.cpp.o"
+  "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o"
   "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/IOManager.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/IOManager.cpp.o"
   "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/ImageLoader.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/ImageLoader.cpp.o"
   "/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/InputManager.cpp" "/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa/CMakeFiles/tabula_rasa.dir/src/InputManager.cpp.o"

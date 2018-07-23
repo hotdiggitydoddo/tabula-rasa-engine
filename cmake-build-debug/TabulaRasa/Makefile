@@ -152,6 +152,33 @@ src/Camera2D.cpp.s:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Camera2D.cpp.s
 .PHONY : src/Camera2D.cpp.s
 
+src/Drawable.o: src/Drawable.cpp.o
+
+.PHONY : src/Drawable.o
+
+# target to build an object file
+src/Drawable.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o
+.PHONY : src/Drawable.cpp.o
+
+src/Drawable.i: src/Drawable.cpp.i
+
+.PHONY : src/Drawable.i
+
+# target to preprocess a source file
+src/Drawable.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.i
+.PHONY : src/Drawable.cpp.i
+
+src/Drawable.s: src/Drawable.cpp.s
+
+.PHONY : src/Drawable.s
+
+# target to generate assembly for a file
+src/Drawable.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.s
+.PHONY : src/Drawable.cpp.s
+
 src/Errors.o: src/Errors.cpp.o
 
 .PHONY : src/Errors.o
@@ -205,6 +232,33 @@ src/GLSLProgram.s: src/GLSLProgram.cpp.s
 src/GLSLProgram.cpp.s:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GLSLProgram.cpp.s
 .PHONY : src/GLSLProgram.cpp.s
+
+src/GameObject.o: src/GameObject.cpp.o
+
+.PHONY : src/GameObject.o
+
+# target to build an object file
+src/GameObject.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o
+.PHONY : src/GameObject.cpp.o
+
+src/GameObject.i: src/GameObject.cpp.i
+
+.PHONY : src/GameObject.i
+
+# target to preprocess a source file
+src/GameObject.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
+
+src/GameObject.s: src/GameObject.cpp.s
+
+.PHONY : src/GameObject.s
+
+# target to generate assembly for a file
+src/GameObject.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
 
 src/IOManager.o: src/IOManager.cpp.o
 
@@ -515,12 +569,18 @@ help:
 	@echo "... src/Camera2D.o"
 	@echo "... src/Camera2D.i"
 	@echo "... src/Camera2D.s"
+	@echo "... src/Drawable.o"
+	@echo "... src/Drawable.i"
+	@echo "... src/Drawable.s"
 	@echo "... src/Errors.o"
 	@echo "... src/Errors.i"
 	@echo "... src/Errors.s"
 	@echo "... src/GLSLProgram.o"
 	@echo "... src/GLSLProgram.i"
 	@echo "... src/GLSLProgram.s"
+	@echo "... src/GameObject.o"
+	@echo "... src/GameObject.i"
+	@echo "... src/GameObject.s"
 	@echo "... src/IOManager.o"
 	@echo "... src/IOManager.i"
 	@echo "... src/IOManager.s"

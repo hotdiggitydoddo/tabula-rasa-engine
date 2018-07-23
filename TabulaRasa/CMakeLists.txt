@@ -19,8 +19,9 @@ add_library(tabula_rasa include/TabulaRasa/Camera2D.h include/TabulaRasa/Errors.
         include/TabulaRasa/GLTexture.h include/TabulaRasa/ImageLoader.h include/TabulaRasa/InputManager.h
         include/TabulaRasa/IOManager.h include/TabulaRasa/picoPNG.h include/TabulaRasa/ResourceManager.h
         include/TabulaRasa/Sprite.h include/TabulaRasa/SpriteBatch.h include/TabulaRasa/TabulaRasa.h
-        include/TabulaRasa/TextureCache.h include/TabulaRasa/Timing.h include/TabulaRasa/Vertex.h include/TabulaRasa/Window.h
+        include/TabulaRasa/TextureCache.h include/TabulaRasa/Timing.h include/TabulaRasa/Vertex.h
+        include/TabulaRasa/Window.h include/TabulaRasa/GameObject.h include/TabulaRasa/Drawable.h
 
         src/Camera2D.cpp src/Errors.cpp src/GLSLProgram.cpp src/ImageLoader.cpp src/InputManager.cpp src/IOManager.cpp
         src/picoPNG.cpp src/ResourceManager.cpp src/Sprite.cpp src/SpriteBatch.cpp src/TabulaRasa.cpp src/TextureCache.cpp
-        src/Timing.cpp src/Window.cpp)
+        src/Timing.cpp src/Window.cpp src/GameObject.cpp src/Drawable.cpp)

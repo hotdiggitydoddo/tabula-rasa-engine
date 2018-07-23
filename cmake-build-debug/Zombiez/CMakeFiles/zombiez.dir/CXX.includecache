@@ -11,6 +11,22 @@ glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp
 -
+Drawable.h
+../Zombiez/../TabulaRasa/include/TabulaRasa/Drawable.h
+
+../Zombiez/../TabulaRasa/include/TabulaRasa/Drawable.h
+SpriteBatch.h
+../Zombiez/../TabulaRasa/include/TabulaRasa/SpriteBatch.h
+GLTexture.h
+../Zombiez/../TabulaRasa/include/TabulaRasa/GLTexture.h
+Vertex.h
+../Zombiez/../TabulaRasa/include/TabulaRasa/Vertex.h
+string
+-
+glm/glm.hpp
+-
+GameObject.h
+../Zombiez/../TabulaRasa/include/TabulaRasa/GameObject.h
 
 ../Zombiez/../TabulaRasa/include/TabulaRasa/Errors.h
 string
@@ -26,6 +42,10 @@ Errors.h
 
 ../Zombiez/../TabulaRasa/include/TabulaRasa/GLTexture.h
 OpenGL/gl3.h
+-
+
+../Zombiez/../TabulaRasa/include/TabulaRasa/GameObject.h
+glm/glm.hpp
 -
 
 ../Zombiez/../TabulaRasa/include/TabulaRasa/InputManager.h
@@ -85,8 +105,8 @@ glm/glm.hpp
 -
 Updatable.h
 ../Zombiez/include/Updatable.h
-Drawable.h
-../Zombiez/include/Drawable.h
+TabulaRasa/Drawable.h
+-
 
 ../Zombiez/include/Bullet.h
 glm/glm.hpp
@@ -95,24 +115,6 @@ TabulaRasa/SpriteBatch.h
 -
 Actor.h
 ../Zombiez/include/Actor.h
-
-../Zombiez/include/Drawable.h
-TabulaRasa/SpriteBatch.h
--
-TabulaRasa/GLTexture.h
--
-TabulaRasa/Vertex.h
--
-string
--
-glm/glm.hpp
--
-GameObject.h
-../Zombiez/include/GameObject.h
-
-../Zombiez/include/GameObject.h
-glm/glm.hpp
--
 
 ../Zombiez/include/Level.h
 vector
@@ -123,6 +125,8 @@ TabulaRasa/SpriteBatch.h
 -
 Actor.h
 ../Zombiez/include/Actor.h
+Player.h
+../Zombiez/include/Player.h
 
 ../Zombiez/include/MainGame.h
 SDL.h
@@ -147,16 +151,24 @@ TabulaRasa/InputManager.h
 -
 TabulaRasa/Timing.h
 -
-Drawable.h
-../Zombiez/include/Drawable.h
+TabulaRasa/Drawable.h
+-
 Bullet.h
 ../Zombiez/include/Bullet.h
 Level.h
 ../Zombiez/include/Level.h
 
+../Zombiez/include/Player.h
+string
+-
+TabulaRasa/Vertex.h
+-
+TabulaRasa/InputManager.h
+-
+Actor.h
+../Zombiez/include/Actor.h
+
 ../Zombiez/include/Updatable.h
-GameObject.h
-../Zombiez/include/GameObject.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.cpp
 Actor.h
@@ -169,16 +181,6 @@ TabulaRasa/GLTexture.h
 -
 TabulaRasa/ResourceManager.h
 -
-
-/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Drawable.cpp
-Drawable.h
-/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Drawable.h
-TabulaRasa/ResourceManager.h
--
-
-/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/GameObject.cpp
-GameObject.h
-/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/GameObject.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp
 Bullet.h
@@ -203,6 +205,12 @@ TabulaRasa/TabulaRasa.h
 -
 TabulaRasa/Errors.h
 -
+
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.cpp
+SDL_keycode.h
+-
+Player.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/main.cpp
 MainGame.h

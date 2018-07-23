@@ -1,25 +1,25 @@
-#include <Bullet.h>
 #include <fstream>
 #include <TabulaRasa/Errors.h>
 #include <iostream>
 #include <TabulaRasa/ResourceManager.h>
 #include "Level.h"
 
-
-void Level::Init()
+void Level::Init(TabulaRasa::InputManager* inputManager)
 {
+    Player* p = new Player(glm::vec2(0), inputManager);
+    _actors.push_back(p);
     for (int i = 0; i < 1; i++)
     {
-        Bullet* b = new Bullet(glm::vec2(0.0, 0.0f), glm::vec2(1.0f, 0.0f), 1.0f, 10000);
+        Bullet* b = new Bullet(glm::vec2(0.0, 0.0f), glm::vec2(3.0f, 3.0f), 1.0f, 10000);
         _actors.push_back(b);
     }
 }
 void Level::Update()
 {
-//    for (auto* actor : _actors)
-//    {
-//        actor->Update();
-//    }
+    for (auto* actor : _actors)
+    {
+        actor->Update();
+    }
 }
 void Level::Draw(TabulaRasa::SpriteBatch& spriteBatch)
 {
@@ -55,15 +55,18 @@ Level::Level(const std::string& mapPath)
     TabulaRasa::Color whiteColor = {255, 255, 255, 255};
 
     //Render all the tiles
-    for (int y = 0; y < _map.size(); y++)
+        int x = 0;
+        int y = 0;
+    for (y = 0; y < _map.size(); y++)
     {
-        for (int x = 0; x < _map[y].size(); x++)
+        for (x = 0; x < _map[y].size(); x++)
         {
             char tile = _map[y][x];
             glm::vec4 destRect(x * TILE_WIDTH, y * TILE_WIDTH, TILE_WIDTH, TILE_WIDTH);
             switch (tile)
             {
                 case 'R':
+                case 'B':
                     _spriteBatch.Draw(destRect,
                                       uvRect,
                                       TabulaRasa::ResourceManager::GetTexture("textures/red_bricks.png").id,
@@ -98,12 +101,13 @@ Level::Level(const std::string& mapPath)
                     break;
 
                 default:
-                    std::printf("Unexpected symbol %c at (&d,%d)", tile, x, y);
+                    std::printf("Unexpected symbol %c at (%d,%d)", tile, x, y);
                     break;
             }
         }
     }
     _spriteBatch.End();
+    _upperBounds = glm::ivec2(x * TILE_WIDTH, y * TILE_WIDTH);
 }
 
 Level::~Level()

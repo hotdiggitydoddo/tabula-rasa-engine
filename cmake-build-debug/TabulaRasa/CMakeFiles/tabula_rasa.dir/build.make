@@ -393,6 +393,54 @@ TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Window.cpp.o.provides: TabulaRasa/CMak
 TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Window.cpp.o.provides.build: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Window.cpp.o
 
 
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o: TabulaRasa/CMakeFiles/tabula_rasa.dir/flags.make
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o: ../TabulaRasa/src/GameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o"
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o -c /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.i"
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp > CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.i
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.s"
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp -o CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.s
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.requires:
+
+.PHONY : TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.requires
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.provides: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.requires
+	$(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.provides.build
+.PHONY : TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.provides
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.provides.build: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o
+
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o: TabulaRasa/CMakeFiles/tabula_rasa.dir/flags.make
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o: ../TabulaRasa/src/Drawable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o"
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o -c /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.i"
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp > CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.i
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.s"
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp -o CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.s
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.requires:
+
+.PHONY : TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.requires
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.provides: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.requires
+	$(MAKE) -f TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.provides.build
+.PHONY : TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.provides
+
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.provides.build: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o
+
+
 # Object files for target tabula_rasa
 tabula_rasa_OBJECTS = \
 "CMakeFiles/tabula_rasa.dir/src/Camera2D.cpp.o" \
@@ -408,7 +456,9 @@ tabula_rasa_OBJECTS = \
 "CMakeFiles/tabula_rasa.dir/src/TabulaRasa.cpp.o" \
 "CMakeFiles/tabula_rasa.dir/src/TextureCache.cpp.o" \
 "CMakeFiles/tabula_rasa.dir/src/Timing.cpp.o" \
-"CMakeFiles/tabula_rasa.dir/src/Window.cpp.o"
+"CMakeFiles/tabula_rasa.dir/src/Window.cpp.o" \
+"CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o" \
+"CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o"
 
 # External object files for target tabula_rasa
 tabula_rasa_EXTERNAL_OBJECTS =
@@ -427,9 +477,11 @@ TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/TabulaRas
 TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/TextureCache.cpp.o
 TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Timing.cpp.o
 TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Window.cpp.o
+TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o
+TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o
 TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/build.make
 TabulaRasa/libtabula_rasa.a: TabulaRasa/CMakeFiles/tabula_rasa.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX static library libtabula_rasa.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX static library libtabula_rasa.a"
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && $(CMAKE_COMMAND) -P CMakeFiles/tabula_rasa.dir/cmake_clean_target.cmake
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug/TabulaRasa && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tabula_rasa.dir/link.txt --verbose=$(VERBOSE)
 
@@ -452,6 +504,8 @@ TabulaRasa/CMakeFiles/tabula_rasa.dir/requires: TabulaRasa/CMakeFiles/tabula_ras
 TabulaRasa/CMakeFiles/tabula_rasa.dir/requires: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/TextureCache.cpp.o.requires
 TabulaRasa/CMakeFiles/tabula_rasa.dir/requires: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Timing.cpp.o.requires
 TabulaRasa/CMakeFiles/tabula_rasa.dir/requires: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Window.cpp.o.requires
+TabulaRasa/CMakeFiles/tabula_rasa.dir/requires: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o.requires
+TabulaRasa/CMakeFiles/tabula_rasa.dir/requires: TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o.requires
 
 .PHONY : TabulaRasa/CMakeFiles/tabula_rasa.dir/requires
 

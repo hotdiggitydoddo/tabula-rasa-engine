@@ -3,7 +3,21 @@
 
 TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Camera2D.cpp.o
  ../TabulaRasa/include/TabulaRasa/Camera2D.h
+ ../TabulaRasa/include/TabulaRasa/Drawable.h
+ ../TabulaRasa/include/TabulaRasa/GLTexture.h
+ ../TabulaRasa/include/TabulaRasa/GameObject.h
+ ../TabulaRasa/include/TabulaRasa/SpriteBatch.h
+ ../TabulaRasa/include/TabulaRasa/Vertex.h
  /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Camera2D.cpp
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o
+ ../TabulaRasa/include/TabulaRasa/Drawable.h
+ ../TabulaRasa/include/TabulaRasa/GLTexture.h
+ ../TabulaRasa/include/TabulaRasa/GameObject.h
+ ../TabulaRasa/include/TabulaRasa/ResourceManager.h
+ ../TabulaRasa/include/TabulaRasa/SpriteBatch.h
+ ../TabulaRasa/include/TabulaRasa/TextureCache.h
+ ../TabulaRasa/include/TabulaRasa/Vertex.h
+ /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp
 TabulaRasa/CMakeFiles/tabula_rasa.dir/src/Errors.cpp.o
  ../TabulaRasa/include/TabulaRasa/Errors.h
  /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Errors.cpp
@@ -55,6 +69,9 @@ TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GLSLProgram.cpp.o
  ../TabulaRasa/include/TabulaRasa/Errors.h
  ../TabulaRasa/include/TabulaRasa/GLSLProgram.h
  /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GLSLProgram.cpp
+TabulaRasa/CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o
+ ../TabulaRasa/include/TabulaRasa/GameObject.h
+ /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp
 TabulaRasa/CMakeFiles/tabula_rasa.dir/src/IOManager.cpp.o
  ../TabulaRasa/include/TabulaRasa/IOManager.h
  /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/IOManager.cpp

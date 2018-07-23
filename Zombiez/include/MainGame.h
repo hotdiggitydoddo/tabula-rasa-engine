@@ -11,8 +11,7 @@
 #include <TabulaRasa/SpriteBatch.h>
 #include <TabulaRasa/InputManager.h>
 #include <TabulaRasa/Timing.h>
-
-#include "Drawable.h"
+#include <TabulaRasa/Drawable.h>
 #include "Bullet.h"
 #include "Level.h"
 
@@ -58,6 +57,6 @@ private:
 
     std::vector<Bullet> _bullets;
 
-    Drawable _circle;
-    Drawable _circle2;
+    TabulaRasa::Drawable _circle;
+    TabulaRasa::Drawable _circle2;
 };

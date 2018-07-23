@@ -139,6 +139,9 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/include/TabulaRasa/Camera2D.h">
 			<Option target="tabula_rasa"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/include/TabulaRasa/Drawable.h">
+			<Option target="tabula_rasa"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/include/TabulaRasa/Errors.h">
 			<Option target="tabula_rasa"/>
 		</Unit>
@@ -146,6 +149,9 @@
 			<Option target="tabula_rasa"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/include/TabulaRasa/GLTexture.h">
+			<Option target="tabula_rasa"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/include/TabulaRasa/GameObject.h">
 			<Option target="tabula_rasa"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/include/TabulaRasa/IOManager.h">
@@ -187,10 +193,16 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Camera2D.cpp">
 			<Option target="tabula_rasa"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp">
+			<Option target="tabula_rasa"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Errors.cpp">
 			<Option target="tabula_rasa"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GLSLProgram.cpp">
+			<Option target="tabula_rasa"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp">
 			<Option target="tabula_rasa"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/IOManager.cpp">
@@ -232,16 +244,13 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Bullet.h">
 			<Option target="zombiez"/>
 		</Unit>
-		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Drawable.h">
-			<Option target="zombiez"/>
-		</Unit>
-		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/GameObject.h">
-			<Option target="zombiez"/>
-		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Level.h">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/MainGame.h">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Player.h">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Updatable.h">
@@ -253,16 +262,13 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Bullet.cpp">
 			<Option target="zombiez"/>
 		</Unit>
-		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Drawable.cpp">
-			<Option target="zombiez"/>
-		</Unit>
-		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/GameObject.cpp">
-			<Option target="zombiez"/>
-		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/MainGame.cpp">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.cpp">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/main.cpp">

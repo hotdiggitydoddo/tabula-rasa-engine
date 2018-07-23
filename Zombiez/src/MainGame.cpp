@@ -33,6 +33,8 @@ void MainGame::InitSystems()
     _camera.Init(_screenWidth, _screenHeight);
 
     InitLevels();
+    _camera.SetTarget(_currentLevel->GetBullet());
+    _camera.SetBounds(glm::vec4(0.0f, 0.0f, _currentLevel->GetUpperWorldBounds().x, _currentLevel->GetUpperWorldBounds().y));
 
     _gameState = GameState::PLAY;
 }
@@ -84,22 +86,22 @@ void MainGame::ProcessInput()
         }
     }
 
-  /*  if (_inputManager.IsKeyPressed(SDLK_w))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(0.0f, CAMERA_SPEED));
-    else if (_inputManager.IsKeyPressed(SDLK_s))
+    /*if (_inputManager.IsKeyPressed(SDLK_w))
         _camera.SetPosition(_camera.GetPosition() + glm::vec2(0.0f, -CAMERA_SPEED));
+    else if (_inputManager.IsKeyPressed(SDLK_s))
+        _camera.SetPosition(_camera.GetPosition() + glm::vec2(0.0f, +CAMERA_SPEED));
 
     if (_inputManager.IsKeyPressed(SDLK_a))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(-CAMERA_SPEED, 0.0f));
+        _camera.SetPosition(_camera.GetPosition() + glm::vec2(+CAMERA_SPEED, 0.0f));
     else if (_inputManager.IsKeyPressed(SDLK_d))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(CAMERA_SPEED, 0.0f));
+        _camera.SetPosition(_camera.GetPosition() + glm::vec2(-CAMERA_SPEED, 0.0f));
 
     if (_inputManager.IsKeyPressed(SDLK_q))
         _camera.SetScale(_camera.GetScale() + SCALE_SPEED);
     else if (_inputManager.IsKeyPressed(SDLK_e))
-        _camera.SetScale(_camera.GetScale() - SCALE_SPEED);
+        _camera.SetScale(_camera.GetScale() - SCALE_SPEED);*/
 
-    if (_inputManager.IsKeyPressed(SDL_BUTTON_LEFT))
+    /*if (_inputManager.IsKeyPressed(SDL_BUTTON_LEFT))
     {
         glm::vec2 mouseCoords = _inputManager.GetMouseCoords();
         mouseCoords = _camera.ScreenToWorld(mouseCoords);
@@ -182,14 +184,8 @@ void MainGame::Draw()
     // Draw stuff!
     _spriteBatch.Begin();
 
-    for (int i = 0; i < _bullets.size(); i++)
-    {
-        _bullets[i].Draw(_spriteBatch);
-    }
     _currentLevel->Draw(_spriteBatch);
 
-    _circle.Draw(_spriteBatch);
-    _circle2.Draw(_spriteBatch);
     _spriteBatch.End();
     _spriteBatch.Render();
 
@@ -207,7 +203,7 @@ void MainGame::InitLevels()
 {
     _currentLevel = new Level("levels/level1.txt");
     _levels.push_back(_currentLevel);
-    _currentLevel->Init();
+    _currentLevel->Init(&_inputManager);
 }
 
 

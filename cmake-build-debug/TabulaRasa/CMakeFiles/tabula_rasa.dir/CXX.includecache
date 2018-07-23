@@ -11,6 +11,22 @@ glm/glm.hpp
 -
 glm/gtc/matrix_transform.hpp
 -
+Drawable.h
+../TabulaRasa/include/TabulaRasa/Drawable.h
+
+../TabulaRasa/include/TabulaRasa/Drawable.h
+SpriteBatch.h
+../TabulaRasa/include/TabulaRasa/SpriteBatch.h
+GLTexture.h
+../TabulaRasa/include/TabulaRasa/GLTexture.h
+Vertex.h
+../TabulaRasa/include/TabulaRasa/Vertex.h
+string
+-
+glm/glm.hpp
+-
+GameObject.h
+../TabulaRasa/include/TabulaRasa/GameObject.h
 
 ../TabulaRasa/include/TabulaRasa/Errors.h
 string
@@ -26,6 +42,10 @@ Errors.h
 
 ../TabulaRasa/include/TabulaRasa/GLTexture.h
 OpenGL/gl3.h
+-
+
+../TabulaRasa/include/TabulaRasa/GameObject.h
+glm/glm.hpp
 -
 
 ../TabulaRasa/include/TabulaRasa/IOManager.h
@@ -100,6 +120,12 @@ vector
 Camera2D.h
 /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Camera2D.h
 
+/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.cpp
+Drawable.h
+/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Drawable.h
+ResourceManager.h
+/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/ResourceManager.h
+
 /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Errors.cpp
 Errors.h
 /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/Errors.h
@@ -117,6 +143,10 @@ fstream
 -
 vector
 -
+
+/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.cpp
+GameObject.h
+/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/GameObject.h
 
 /Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/IOManager.cpp
 IOManager.h

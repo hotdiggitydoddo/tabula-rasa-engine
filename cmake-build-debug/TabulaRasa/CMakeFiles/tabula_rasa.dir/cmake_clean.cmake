@@ -13,6 +13,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/tabula_rasa.dir/src/TextureCache.cpp.o"
   "CMakeFiles/tabula_rasa.dir/src/Timing.cpp.o"
   "CMakeFiles/tabula_rasa.dir/src/Window.cpp.o"
+  "CMakeFiles/tabula_rasa.dir/src/GameObject.cpp.o"
+  "CMakeFiles/tabula_rasa.dir/src/Drawable.cpp.o"
   "libtabula_rasa.pdb"
   "libtabula_rasa.a"
 )
