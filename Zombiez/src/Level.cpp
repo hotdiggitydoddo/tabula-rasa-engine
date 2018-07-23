@@ -8,11 +8,11 @@ void Level::Init(TabulaRasa::InputManager* inputManager)
 {
     Player* p = new Player(glm::vec2(0), inputManager);
     _actors.push_back(p);
-    for (int i = 0; i < 1; i++)
-    {
-        Bullet* b = new Bullet(glm::vec2(0.0, 0.0f), glm::vec2(3.0f, 3.0f), 1.0f, 10000);
-        _actors.push_back(b);
-    }
+//    for (int i = 0; i < 1; i++)
+//    {
+//        Bullet* b = new Bullet(glm::vec2(0.0, 0.0f), glm::vec2(3.0f, 3.0f), 1.0f, 10000);
+//        _actors.push_back(b);
+//    }
 }
 void Level::Update()
 {

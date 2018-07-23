@@ -33,7 +33,6 @@ Zombiez/CMakeFiles/zombiez.dir/src/Level.cpp.o
  ../Zombiez/../TabulaRasa/include/TabulaRasa/TextureCache.h
  ../Zombiez/../TabulaRasa/include/TabulaRasa/Vertex.h
  ../Zombiez/include/Actor.h
- ../Zombiez/include/Bullet.h
  ../Zombiez/include/Level.h
  ../Zombiez/include/Player.h
  ../Zombiez/include/Updatable.h

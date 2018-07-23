@@ -17,6 +17,7 @@ public:
     void Draw(SpriteBatch& spriteBatch);
 
     glm::vec2 GetOrigin() const;
+    float GetScale() const { return _scale; }
 
 protected:
     float _scale;

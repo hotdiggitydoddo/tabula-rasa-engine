@@ -32,7 +32,7 @@ void Camera2D::Update()
 {
     if (_target)
     {
-        SetPosition(_target->GetPosition() + _target->GetOrigin());
+        SetPosition((_target->GetPosition() + _target->GetOrigin()) * _target->GetScale());
         ClampCameraToWorldBounds();
 
     }
@@ -82,8 +82,8 @@ glm::vec2 Camera2D::ScreenToWorld(glm::vec2 screenCoords)
 void Camera2D::ClampCameraToWorldBounds()
 {
     glm::vec2 minPos(_screenWidth / 2, _screenHeight / 2);
-    glm::vec2 maxPos(_worldBounds.z - (_screenWidth / 2), _worldBounds.w - (_screenHeight / 2));
-
+    glm::vec2 maxPos(_worldBounds.z - (_screenWidth / 2) / _scale, _worldBounds.w - (_screenHeight / 2) / _scale);
+    minPos /= _scale;
     SetPosition(glm::clamp(_position, minPos, maxPos));
 }
 
