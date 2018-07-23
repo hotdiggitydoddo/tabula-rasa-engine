@@ -3,37 +3,43 @@
 #include <iostream>
 #include <TabulaRasa/TabulaRasa.h>
 #include <TabulaRasa/Errors.h>
-#include <TabulaRasa/ResourceManager.h>
 
 MainGame::MainGame(int width, int height)
     :
     _screenWidth(width),
     _screenHeight(height),
     _time(0.0f),
-    _maxFps(60.0f)
+    _maxFps(60.0f),
+    _currentLevel(nullptr)
 {
-    _camera.Init(width, height);
 }
 
 MainGame::~MainGame()
 {
+    _currentLevel = nullptr;
+    for (auto& level : _levels)
+        delete level;
 }
 
 void MainGame::InitSystems()
 {
     TabulaRasa::Init();
 
-    _window.Create("Game Engine", _screenWidth, _screenHeight, 0);
-
+    _window.Create("Zombiez!", _screenWidth, _screenHeight, 0);
+    glClearColor(0.7f, 0.7f, 0.7f, 1.0f);
     InitShaders();
     _spriteBatch.Init();
     _fpsLimiter.Init(_maxFps);
+    _camera.Init(_screenWidth, _screenHeight);
+
+    InitLevels();
+
     _gameState = GameState::PLAY;
 }
 
 void MainGame::InitShaders()
 {
-    _textureProgram.CompileShaders("shaders/colorShading.vert", "shaders/colorShading.frag");
+    _textureProgram.CompileShaders("shaders/textureShading.vert", "shaders/textureShading.frag");
     _textureProgram.AddAttribute("vertexPosition");
     _textureProgram.AddAttribute("vertexColor");
     _textureProgram.AddAttribute("vertexUV");
@@ -120,7 +126,8 @@ void MainGame::Update()
 
         for (int i = 0; i < _bullets.size();)
         {
-            if (_bullets[i].Update())
+            _bullets[i].Update();
+            if (!_bullets[i].IsAlive())
             {
                 _bullets[i] = _bullets.back();
                 _bullets.pop_back();
@@ -131,6 +138,8 @@ void MainGame::Update()
             }
         }
 
+        //_circle.SetPosition(_circle.GetPosition() + glm::vec2(10,0));
+        _currentLevel->Update();
         Draw();
 
         _fps = _fpsLimiter.EndFrame();
@@ -160,15 +169,15 @@ void MainGame::Draw()
     glActiveTexture(GL_TEXTURE0);
 
     // Get the uniform location
-    GLint textureLocation = _textureProgram.GetUniformLocation("tex");
+    GLint textureLocation = _textureProgram.GetUniformLocation("mySampler");
     // Tell the shader that the texture is in texture unit 0
     glUniform1i(textureLocation, 0);
 
     // Set the camera matrix
-    GLint pLocation = _textureProgram.GetUniformLocation("P");
-    glm::mat4 cameraMatrix = _camera.GetCameraMatrix();
+    GLint pLocation = _textureProgram.GetUniformLocation("transformationMatrix");
+    glm::mat4 projectionMatrix = _camera.GetCameraMatrix();
 
-    glUniformMatrix4fv(pLocation, 1, GL_FALSE, &cameraMatrix[0][0]);
+    glUniformMatrix4fv(pLocation, 1, GL_FALSE, &projectionMatrix[0][0]);
 
     // Draw stuff!
     _spriteBatch.Begin();
@@ -177,7 +186,10 @@ void MainGame::Draw()
     {
         _bullets[i].Draw(_spriteBatch);
     }
+    _currentLevel->Draw(_spriteBatch);
 
+    _circle.Draw(_spriteBatch);
+    _circle2.Draw(_spriteBatch);
     _spriteBatch.End();
     _spriteBatch.Render();
 
@@ -187,7 +199,15 @@ void MainGame::Draw()
     // Disable the shader
     _textureProgram.Unuse();
 
+
     _window.SwapBuffer();
+}
+
+void MainGame::InitLevels()
+{
+    _currentLevel = new Level("levels/level1.txt");
+    _levels.push_back(_currentLevel);
+    _currentLevel->Init();
 }
 
 

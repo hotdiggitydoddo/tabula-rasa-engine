@@ -125,6 +125,33 @@ zombiez/fast:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/build
 .PHONY : zombiez/fast
 
+src/Actor.o: src/Actor.cpp.o
+
+.PHONY : src/Actor.o
+
+# target to build an object file
+src/Actor.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Actor.cpp.o
+.PHONY : src/Actor.cpp.o
+
+src/Actor.i: src/Actor.cpp.i
+
+.PHONY : src/Actor.i
+
+# target to preprocess a source file
+src/Actor.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Actor.cpp.i
+.PHONY : src/Actor.cpp.i
+
+src/Actor.s: src/Actor.cpp.s
+
+.PHONY : src/Actor.s
+
+# target to generate assembly for a file
+src/Actor.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Actor.cpp.s
+.PHONY : src/Actor.cpp.s
+
 src/Bullet.o: src/Bullet.cpp.o
 
 .PHONY : src/Bullet.o
@@ -151,6 +178,87 @@ src/Bullet.s: src/Bullet.cpp.s
 src/Bullet.cpp.s:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Bullet.cpp.s
 .PHONY : src/Bullet.cpp.s
+
+src/Drawable.o: src/Drawable.cpp.o
+
+.PHONY : src/Drawable.o
+
+# target to build an object file
+src/Drawable.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Drawable.cpp.o
+.PHONY : src/Drawable.cpp.o
+
+src/Drawable.i: src/Drawable.cpp.i
+
+.PHONY : src/Drawable.i
+
+# target to preprocess a source file
+src/Drawable.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Drawable.cpp.i
+.PHONY : src/Drawable.cpp.i
+
+src/Drawable.s: src/Drawable.cpp.s
+
+.PHONY : src/Drawable.s
+
+# target to generate assembly for a file
+src/Drawable.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Drawable.cpp.s
+.PHONY : src/Drawable.cpp.s
+
+src/GameObject.o: src/GameObject.cpp.o
+
+.PHONY : src/GameObject.o
+
+# target to build an object file
+src/GameObject.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/GameObject.cpp.o
+.PHONY : src/GameObject.cpp.o
+
+src/GameObject.i: src/GameObject.cpp.i
+
+.PHONY : src/GameObject.i
+
+# target to preprocess a source file
+src/GameObject.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/GameObject.cpp.i
+.PHONY : src/GameObject.cpp.i
+
+src/GameObject.s: src/GameObject.cpp.s
+
+.PHONY : src/GameObject.s
+
+# target to generate assembly for a file
+src/GameObject.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/GameObject.cpp.s
+.PHONY : src/GameObject.cpp.s
+
+src/Level.o: src/Level.cpp.o
+
+.PHONY : src/Level.o
+
+# target to build an object file
+src/Level.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Level.cpp.o
+.PHONY : src/Level.cpp.o
+
+src/Level.i: src/Level.cpp.i
+
+.PHONY : src/Level.i
+
+# target to preprocess a source file
+src/Level.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Level.cpp.i
+.PHONY : src/Level.cpp.i
+
+src/Level.s: src/Level.cpp.s
+
+.PHONY : src/Level.s
+
+# target to generate assembly for a file
+src/Level.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Level.cpp.s
+.PHONY : src/Level.cpp.s
 
 src/MainGame.o: src/MainGame.cpp.o
 
@@ -215,9 +323,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... zombiez"
+	@echo "... src/Actor.o"
+	@echo "... src/Actor.i"
+	@echo "... src/Actor.s"
 	@echo "... src/Bullet.o"
 	@echo "... src/Bullet.i"
 	@echo "... src/Bullet.s"
+	@echo "... src/Drawable.o"
+	@echo "... src/Drawable.i"
+	@echo "... src/Drawable.s"
+	@echo "... src/GameObject.o"
+	@echo "... src/GameObject.i"
+	@echo "... src/GameObject.s"
+	@echo "... src/Level.o"
+	@echo "... src/Level.i"
+	@echo "... src/Level.s"
 	@echo "... src/MainGame.o"
 	@echo "... src/MainGame.i"
 	@echo "... src/MainGame.s"

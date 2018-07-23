@@ -38,6 +38,8 @@ public:
     { return _scale; }
     glm::mat4 GetCameraMatrix()
     { return _cameraMatrix; }
+    glm::vec2 GetOrigin()
+    { return glm::vec2(_screenWidth * .5f, _screenHeight * .5f);}
 
 private:
     int _screenWidth, _screenHeight;

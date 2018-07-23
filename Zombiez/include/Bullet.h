@@ -2,19 +2,15 @@
 
 #include <glm/glm.hpp>
 #include <TabulaRasa/SpriteBatch.h>
+#include "Actor.h"
 
-class Bullet
+class Bullet : public Actor
 {
 public:
     Bullet(glm::vec2 pos, glm::vec2 dir, float speed, int lifetime);
-
-    // Returns whether lifetime is over
-    bool Update();
-    void Draw(TabulaRasa::SpriteBatch& spriteBatch);
+    void Update() override;
+    bool IsAlive() { return _lifetime > 0 ;}
 private:
-    glm::vec2 _position;
-    glm::vec2 _direction;
-    float _speed;
     int _lifetime;
 };
 

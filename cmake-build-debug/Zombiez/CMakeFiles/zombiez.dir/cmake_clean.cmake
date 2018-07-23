@@ -1,7 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/zombiez.dir/src/main.cpp.o"
   "CMakeFiles/zombiez.dir/src/MainGame.cpp.o"
+  "CMakeFiles/zombiez.dir/src/Drawable.cpp.o"
   "CMakeFiles/zombiez.dir/src/Bullet.cpp.o"
+  "CMakeFiles/zombiez.dir/src/GameObject.cpp.o"
+  "CMakeFiles/zombiez.dir/src/Level.cpp.o"
+  "CMakeFiles/zombiez.dir/src/Actor.cpp.o"
   "zombiez.pdb"
   "zombiez"
 )

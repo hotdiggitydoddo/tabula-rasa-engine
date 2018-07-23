@@ -226,13 +226,40 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/TabulaRasa/src/picoPNG.cpp">
 			<Option target="tabula_rasa"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Actor.h">
+			<Option target="zombiez"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Bullet.h">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Drawable.h">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/GameObject.h">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Level.h">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/MainGame.h">
 			<Option target="zombiez"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Updatable.h">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.cpp">
+			<Option target="zombiez"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Bullet.cpp">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Drawable.cpp">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/GameObject.cpp">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/MainGame.cpp">
