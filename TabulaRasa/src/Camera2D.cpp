@@ -24,8 +24,6 @@ Camera2D::~Camera2D()
 void Camera2D::SetTarget(Drawable* drawable)
 {
     _target = drawable;
-    //glm::vec3 translate(-drawable.GetPosition().x - drawable.GetOrigin().x, -drawable.GetPosition().y - drawable.GetOrigin().y, 0.0f);
-    //_cameraMatrix = glm::translate(_orthoMatrix, translate);
 }
 
 void Camera2D::Update()

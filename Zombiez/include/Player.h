@@ -16,9 +16,9 @@ public:
 
     ~Player();
     void Update() override;
-
-private:
     void HandleInput();
+private:
+
 
     TabulaRasa::InputManager* _inputManager;
 };

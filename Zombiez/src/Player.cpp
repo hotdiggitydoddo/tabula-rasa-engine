@@ -1,12 +1,15 @@
-#include <SDL_keycode.h>
+#include <SDL2/SDL_keycode.h>
+#include <algorithm>
+#include <iostream>
 #include "Player.h"
-
+#include "Level.h"
 
 void Player::Update()
 {
-    HandleInput();
     Actor::Update();
+    CollideWithLevel();
 }
+
 void Player::HandleInput()
 {
     _direction = glm::vec2(0);
@@ -19,7 +22,11 @@ void Player::HandleInput()
     else if (_inputManager->IsKeyPressed(SDLK_d))
         _direction.x = 1;
 }
+
 Player::~Player()
 {
     _inputManager = nullptr;
 }
+
+
+

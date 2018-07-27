@@ -123,6 +123,8 @@ string
 -
 TabulaRasa/SpriteBatch.h
 -
+TabulaRasa/Camera2D.h
+-
 Actor.h
 ../Zombiez/include/Actor.h
 Player.h
@@ -153,8 +155,6 @@ TabulaRasa/Timing.h
 -
 TabulaRasa/Drawable.h
 -
-Bullet.h
-../Zombiez/include/Bullet.h
 Level.h
 ../Zombiez/include/Level.h
 
@@ -173,6 +173,8 @@ Actor.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.cpp
 Actor.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.h
+Level.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Bullet.cpp
 Bullet.h
@@ -205,10 +207,16 @@ TabulaRasa/Errors.h
 -
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.cpp
-SDL_keycode.h
+SDL2/SDL_keycode.h
+-
+algorithm
+-
+iostream
 -
 Player.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.h
+Level.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/main.cpp
 MainGame.h

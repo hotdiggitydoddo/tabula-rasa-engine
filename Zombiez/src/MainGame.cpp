@@ -10,13 +10,12 @@ MainGame::MainGame(int width, int height)
     _screenHeight(height),
     _time(0.0f),
     _maxFps(60.0f),
-    _currentLevel(nullptr)
+    _currentLevelIndex(-1)
 {
 }
 
 MainGame::~MainGame()
 {
-    _currentLevel = nullptr;
     for (auto& level : _levels)
         delete level;
 }
@@ -33,8 +32,7 @@ void MainGame::InitSystems()
     _camera.Init(_screenWidth, _screenHeight);
 
     InitLevels();
-    _camera.SetTarget(_currentLevel->GetBullet());
-    _camera.SetBounds(glm::vec4(0.0f, 0.0f, _currentLevel->GetUpperWorldBounds().x, _currentLevel->GetUpperWorldBounds().y));
+    _currentLevelIndex = 0;
 
     _gameState = GameState::PLAY;
 }
@@ -123,10 +121,10 @@ void MainGame::Update()
 
         ProcessInput();
         _time += 0.1f;
-
+        _levels[_currentLevelIndex]->Update();
         _camera.Update();
 
-        for (int i = 0; i < _bullets.size();)
+        /*for (int i = 0; i < _bullets.size();)
         {
             _bullets[i].Update();
             if (!_bullets[i].IsAlive())
@@ -139,9 +137,8 @@ void MainGame::Update()
                 i++;
             }
         }
+*/
 
-        //_circle.SetPosition(_circle.GetPosition() + glm::vec2(10,0));
-        _currentLevel->Update();
         Draw();
 
         _fps = _fpsLimiter.EndFrame();
@@ -184,7 +181,7 @@ void MainGame::Draw()
     // Draw stuff!
     _spriteBatch.Begin();
 
-    _currentLevel->Draw(_spriteBatch);
+    _levels[_currentLevelIndex]->Draw(_spriteBatch);
 
     _spriteBatch.End();
     _spriteBatch.Render();
@@ -201,9 +198,9 @@ void MainGame::Draw()
 
 void MainGame::InitLevels()
 {
-    _currentLevel = new Level("levels/level1.txt");
-    _levels.push_back(_currentLevel);
-    _currentLevel->Init(&_inputManager);
+    _levels.push_back(new Level("levels/level1.txt"));
+    _currentLevelIndex = 0;
+    _levels[_currentLevelIndex]->Init(&_inputManager, &_camera);
 }
 
 

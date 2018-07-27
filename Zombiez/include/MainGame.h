@@ -12,7 +12,6 @@
 #include <TabulaRasa/InputManager.h>
 #include <TabulaRasa/Timing.h>
 #include <TabulaRasa/Drawable.h>
-#include "Bullet.h"
 #include "Level.h"
 
 enum class GameState
@@ -46,7 +45,7 @@ private:
     TabulaRasa::Camera2D _camera;
 
     std::vector<Level*> _levels;
-    Level* _currentLevel;
+    int _currentLevelIndex;
 
     int _screenWidth;
     int _screenHeight;
@@ -55,8 +54,6 @@ private:
     float _maxFps;
     float _time;
 
-    std::vector<Bullet> _bullets;
+    Player* player;
 
-    TabulaRasa::Drawable _circle;
-    TabulaRasa::Drawable _circle2;
 };
