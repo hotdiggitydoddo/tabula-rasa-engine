@@ -20,6 +20,9 @@ public:
     void Update();
     void Draw(TabulaRasa::SpriteBatch& spriteBatch);
 
+    int GetWidth() { return _map[0].size(); }
+    int GetHeight() { return _map.size(); }
+
     glm::ivec4 GetBounds() { return _upperBounds; }
     char GetTileAtWorldPosition(const glm::vec2& worldPos);
     glm::ivec2 WorldToTilePos(const glm::vec2& worldPos);

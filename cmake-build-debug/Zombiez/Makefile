@@ -179,6 +179,33 @@ src/Bullet.cpp.s:
 	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Bullet.cpp.s
 .PHONY : src/Bullet.cpp.s
 
+src/Human.o: src/Human.cpp.o
+
+.PHONY : src/Human.o
+
+# target to build an object file
+src/Human.cpp.o:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Human.cpp.o
+.PHONY : src/Human.cpp.o
+
+src/Human.i: src/Human.cpp.i
+
+.PHONY : src/Human.i
+
+# target to preprocess a source file
+src/Human.cpp.i:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Human.cpp.i
+.PHONY : src/Human.cpp.i
+
+src/Human.s: src/Human.cpp.s
+
+.PHONY : src/Human.s
+
+# target to generate assembly for a file
+src/Human.cpp.s:
+	cd /Users/ryan/Projects/tabula-rasa-engine/cmake-build-debug && $(MAKE) -f Zombiez/CMakeFiles/zombiez.dir/build.make Zombiez/CMakeFiles/zombiez.dir/src/Human.cpp.s
+.PHONY : src/Human.cpp.s
+
 src/Level.o: src/Level.cpp.o
 
 .PHONY : src/Level.o
@@ -302,6 +329,9 @@ help:
 	@echo "... src/Bullet.o"
 	@echo "... src/Bullet.i"
 	@echo "... src/Bullet.s"
+	@echo "... src/Human.o"
+	@echo "... src/Human.i"
+	@echo "... src/Human.s"
 	@echo "... src/Level.o"
 	@echo "... src/Level.i"
 	@echo "... src/Level.s"

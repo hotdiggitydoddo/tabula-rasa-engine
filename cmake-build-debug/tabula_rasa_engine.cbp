@@ -244,6 +244,9 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Bullet.h">
 			<Option target="zombiez"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Human.h">
+			<Option target="zombiez"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Level.h">
 			<Option target="zombiez"/>
 		</Unit>
@@ -253,6 +256,9 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Player.h">
 			<Option target="zombiez"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/RNG.h">
+			<Option target="zombiez"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Updatable.h">
 			<Option target="zombiez"/>
 		</Unit>
@@ -260,6 +266,9 @@
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Bullet.cpp">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.cpp">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp">

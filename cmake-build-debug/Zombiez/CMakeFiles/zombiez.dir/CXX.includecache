@@ -116,6 +116,12 @@ TabulaRasa/SpriteBatch.h
 Actor.h
 ../Zombiez/include/Actor.h
 
+../Zombiez/include/Human.h
+TabulaRasa/Vertex.h
+-
+Actor.h
+../Zombiez/include/Actor.h
+
 ../Zombiez/include/Level.h
 vector
 -
@@ -155,8 +161,12 @@ TabulaRasa/Timing.h
 -
 TabulaRasa/Drawable.h
 -
+random
+-
 Level.h
 ../Zombiez/include/Level.h
+RNG.h
+../Zombiez/include/RNG.h
 
 ../Zombiez/include/Player.h
 string
@@ -167,6 +177,10 @@ TabulaRasa/InputManager.h
 -
 Actor.h
 ../Zombiez/include/Actor.h
+
+../Zombiez/include/RNG.h
+random
+-
 
 ../Zombiez/include/Updatable.h
 
@@ -184,6 +198,10 @@ TabulaRasa/GLTexture.h
 TabulaRasa/ResourceManager.h
 -
 
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.cpp
+Human.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
+
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp
 fstream
 -
@@ -193,6 +211,10 @@ iostream
 -
 TabulaRasa/ResourceManager.h
 -
+MainGame.h
+-
+Human.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
 Level.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
 
@@ -205,6 +227,8 @@ TabulaRasa/TabulaRasa.h
 -
 TabulaRasa/Errors.h
 -
+RNG.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/RNG.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.cpp
 SDL2/SDL_keycode.h

@@ -12,7 +12,9 @@
 #include <TabulaRasa/InputManager.h>
 #include <TabulaRasa/Timing.h>
 #include <TabulaRasa/Drawable.h>
+#include <random>
 #include "Level.h"
+#include "RNG.h"
 
 enum class GameState
 {
@@ -22,11 +24,12 @@ enum class GameState
 class MainGame
 {
 public:
-    MainGame(int width = 1024, int height = 768);
+    MainGame(int width = 1024, int height = 768, unsigned int seed = 0);
     ~MainGame();
 
     void Run();
 
+    static RNG RandomEngine;
 private:
     void InitSystems();
     void InitShaders();

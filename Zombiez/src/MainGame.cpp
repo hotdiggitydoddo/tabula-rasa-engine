@@ -3,8 +3,12 @@
 #include <iostream>
 #include <TabulaRasa/TabulaRasa.h>
 #include <TabulaRasa/Errors.h>
+#include "RNG.h"
 
-MainGame::MainGame(int width, int height)
+
+RNG MainGame::RandomEngine(0);
+
+MainGame::MainGame(int width, int height, unsigned int seed)
     :
     _screenWidth(width),
     _screenHeight(height),
@@ -12,6 +16,7 @@ MainGame::MainGame(int width, int height)
     _maxFps(60.0f),
     _currentLevelIndex(-1)
 {
+
 }
 
 MainGame::~MainGame()
@@ -23,6 +28,7 @@ MainGame::~MainGame()
 void MainGame::InitSystems()
 {
     TabulaRasa::Init();
+    RandomEngine.seed(10);
 
     _window.Create("Zombiez!", _screenWidth, _screenHeight, 0);
     glClearColor(0.7f, 0.7f, 0.7f, 1.0f);
@@ -146,7 +152,7 @@ void MainGame::Update()
         // print only once every 1000 frames
         static int frameCounter = 0;
         frameCounter++;
-        if (frameCounter == 1000)
+        if (frameCounter == 10)
         {
             std::cout << _fps << std::endl;
             frameCounter = 0;

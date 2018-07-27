@@ -2,6 +2,8 @@
 #include <TabulaRasa/Errors.h>
 #include <iostream>
 #include <TabulaRasa/ResourceManager.h>
+#include <MainGame.h>
+#include "Human.h"
 #include "Level.h"
 
 void Level::Init(TabulaRasa::InputManager* inputManager, TabulaRasa::Camera2D* camera)
@@ -13,15 +15,28 @@ void Level::Init(TabulaRasa::InputManager* inputManager, TabulaRasa::Camera2D* c
     _camera->SetBounds(_upperBounds);
 
     _actors.push_back(_player);
-//    for (int i = 0; i < 1; i++)
-//    {
-//        Bullet* b = new Bullet(glm::vec2(0.0, 0.0f), glm::vec2(3.0f, 3.0f), 1.0f, 10000);
-//        _actors.push_back(b);
-//    }
-    std::cout << GetTileAtWorldPosition({0,0})  << " " << WorldToTilePos({0, 0}).x << "," << WorldToTilePos({0, 0}).y << std::endl;
-    std::cout << GetTileAtWorldPosition({63,0})  << " " << WorldToTilePos({63, 0}).x << "," << WorldToTilePos({63, 0}).y << std::endl;
-    std::cout << GetTileAtWorldPosition({72,12})  << " " << WorldToTilePos({72, 12}).x << "," << WorldToTilePos({72, 12}).y << std::endl;
 
+    for (int i = 0; i < 10; ++i)
+    {
+        std::cout << MainGame::RandomEngine.getRandom(20) << std::endl;
+    }
+    for (int i = 0; i < 100; i++)
+    {
+        glm::ivec2 pos(
+            MainGame::RandomEngine.getRandomInt(2, GetWidth() - 2),
+            MainGame::RandomEngine.getRandomInt(2, GetHeight() - 2)
+        );
+
+        Human* h = new Human(
+            pos * TILE_WIDTH,
+            glm::vec2(MainGame::RandomEngine.getRandomDouble(-1, 1),
+                      MainGame::RandomEngine.getRandomDouble(-1, 1)),
+            MainGame::RandomEngine.getRandomDouble(1.0f, 4.0f));
+
+        h->Init(this);
+
+        _actors.push_back(h);
+    }
 }
 void Level::Update()
 {
@@ -126,12 +141,12 @@ Level::Level(const std::string& mapPath)
     _spriteBatch.End();
     _upperBounds = glm::ivec4(0.0f, 0.0f, x * TILE_WIDTH, y * TILE_WIDTH);
     _camera = nullptr;
-
 }
 
 Level::~Level()
 {
     _camera = nullptr;
+
     for (auto& actor : _actors)
     {
         delete actor;
@@ -142,8 +157,8 @@ char Level::GetTileAtWorldPosition(const glm::vec2& worldPos)
 {
     int y = static_cast<int>(floor(worldPos.y / (TILE_WIDTH * _camera->GetScale())));
     int x = static_cast<int>(floor(worldPos.x / (TILE_WIDTH * _camera->GetScale())));
-    std::cout << "position: " << worldPos.x << "," << worldPos.y << std::endl;
-    std::cout << "tile " << "(" << std::to_string(x) << ", " << std::to_string(y) << ")" << " is " << _map[y][x] << std::endl;
+    //std::cout << "position: " << worldPos.x << "," << worldPos.y << std::endl;
+    //std::cout << "tile " << "(" << std::to_string(x) << ", " << std::to_string(y) << ")" << " is " << _map[y][x] << std::endl;
     return _map[y][x];
 }
 
