@@ -13,6 +13,7 @@ public:
     void Init(Level* level);
     virtual void Update() = 0;
     virtual ~Actor() { _level = nullptr; }
+    bool CollideWithActor(Actor* other);
 
 
 protected:

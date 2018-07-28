@@ -84,3 +84,25 @@ void Actor::CollideWithTile(const glm::vec2& tilePos)
         }
     }
 }
+
+bool Actor::CollideWithActor(Actor* other)
+{
+    glm::vec2 otherCenterPos = other->_position + other->GetOrigin();
+    glm::vec2 ourCenterPos = _position + GetOrigin();
+
+    float minDistance = GetOrigin().x + other->GetOrigin().x;
+
+    glm::vec2 distVec = ourCenterPos - otherCenterPos;
+    float distance = glm::length(distVec);
+
+    float collisionDepth = minDistance - distance;
+
+    if (collisionDepth <= 0)
+        return false;
+
+    glm::vec2 collisionDepthVec = glm::normalize(distVec) * collisionDepth;
+
+    _position += collisionDepthVec / 2.0f;
+    other->_position -= collisionDepthVec / 2.0f;
+    return true;
+}

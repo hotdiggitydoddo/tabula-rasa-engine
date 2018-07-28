@@ -46,6 +46,14 @@ void Level::Update()
     {
         actor->Update();
     }
+
+    for (int i = 0; i < _actors.size(); i++)
+    {
+        for (int j = i + 1; j < _actors.size(); j++)
+        {
+            _actors[i]->CollideWithActor(_actors[j]);
+        }
+    }
 }
 void Level::Draw(TabulaRasa::SpriteBatch& spriteBatch)
 {
