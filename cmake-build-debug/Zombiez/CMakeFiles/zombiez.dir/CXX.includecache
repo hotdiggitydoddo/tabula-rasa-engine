@@ -121,6 +121,8 @@ TabulaRasa/Vertex.h
 -
 Actor.h
 ../Zombiez/include/Actor.h
+MainGame.h
+../Zombiez/include/MainGame.h
 
 ../Zombiez/include/Level.h
 vector
@@ -201,6 +203,8 @@ TabulaRasa/ResourceManager.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.cpp
 Human.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
+glm/gtx/rotate_vector.hpp
+-
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp
 fstream

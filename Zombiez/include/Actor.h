@@ -16,7 +16,7 @@ public:
 
 
 protected:
-    void CollideWithLevel();
+    bool CollideWithLevel();
     void CheckTilePosition(std::vector<glm::ivec2>& collidedTilePositions, float x, float y);
     void CollideWithTile(const glm::vec2& tilePos);
 

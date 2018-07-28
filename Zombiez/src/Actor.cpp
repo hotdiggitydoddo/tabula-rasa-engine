@@ -18,7 +18,7 @@ void Actor::Init(Level* level)
     _level = level;
 }
 
-void Actor::CollideWithLevel()
+bool Actor::CollideWithLevel()
 {
     std::vector<glm::ivec2> collidedTilePositions;
     glm::vec2 origin = GetOrigin();
@@ -27,8 +27,13 @@ void Actor::CollideWithLevel()
     CheckTilePosition(collidedTilePositions, _position.x + (origin.x * 2), _position.y + (origin.y * 2));
     CheckTilePosition(collidedTilePositions, _position.x, _position.y + (origin.y * 2));
 
+    if (collidedTilePositions.size() == 0)
+        return false;
+
     for (auto& pos : collidedTilePositions)
         CollideWithTile(pos);
+
+    return true;
 }
 
 void Actor::CheckTilePosition(std::vector<glm::ivec2>& collidedTilePositions, float x, float y)

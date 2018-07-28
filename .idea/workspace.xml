@@ -2,8 +2,8 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="tabula_rasa_engine" targetName="zombiez" />
       <config projectName="tabula_rasa_engine" targetName="tabula_rasa" />
+      <config projectName="tabula_rasa_engine" targetName="zombiez" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -13,32 +13,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1102847a-8a48-4ce4-b6cc-b67f1f9753e4" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Zombiez/include/Human.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Zombiez/include/RNG.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Zombiez/src/Human.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zombiez/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zombiez/include/Level.h" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/include/Level.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zombiez/include/Actor.h" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/include/Actor.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zombiez/include/Human.h" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/include/Human.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Zombiez/include/MainGame.h" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/include/MainGame.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zombiez/src/Level.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/src/Level.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zombiez/src/MainGame.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/src/MainGame.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zombiez/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/src/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/CMakeFiles/zombiez.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/zombiez" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Zombiez/zombiez.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Zombiez/zombiez.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tabula_rasa_engine.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tabula_rasa_engine.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zombiez/include/RNG.h" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/include/RNG.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zombiez/src/Actor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/src/Actor.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zombiez/src/Human.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Zombiez/src/Human.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,20 +35,11 @@
       <file leaf-file-name="MainGame.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Zombiez/src/MainGame.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="2772">
               <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Updatable.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Zombiez/include/Updatable.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="18">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
             </state>
           </provider>
         </entry>
@@ -82,11 +53,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Level.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Level.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Zombiez/src/Level.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="149" column="3" selection-start-line="149" selection-start-column="3" selection-end-line="149" selection-end-column="3" />
+            <state relative-caret-position="88">
+              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
@@ -106,22 +77,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="string" pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
+      <file leaf-file-name="MainGame.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zombiez/include/MainGame.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="2957" selection-start-line="2957" selection-end-line="2957" />
+            <state relative-caret-position="324">
+              <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+              <folding>
+                <element signature="e#14#30#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainGame.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Zombiez/include/MainGame.h">
+      <file leaf-file-name="Actor.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zombiez/src/Actor.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
+            <state relative-caret-position="509">
+              <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
               <folding>
-                <element signature="e#14#30#0" expanded="true" />
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Actor.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Zombiez/include/Actor.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+              <folding>
+                <element signature="e#14#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,8 +116,8 @@
       <file leaf-file-name="RNG.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Zombiez/include/RNG.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="342">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -139,8 +125,8 @@
       <file leaf-file-name="Human.h" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Zombiez/include/Human.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="108">
+              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
               <folding>
                 <element signature="e#14#44#0" expanded="true" />
               </folding>
@@ -148,11 +134,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Human.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Human.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Zombiez/src/Human.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+            <state relative-caret-position="396">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -201,17 +190,17 @@
         <option value="$PROJECT_DIR$/TabulaRasa/src/Camera2D.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/Zombiez/levels/level1.txt" />
         <option value="$PROJECT_DIR$/Zombiez/include/Player.h" />
-        <option value="$PROJECT_DIR$/Zombiez/include/Actor.h" />
         <option value="$PROJECT_DIR$/Zombiez/src/Player.cpp" />
-        <option value="$PROJECT_DIR$/Zombiez/src/Actor.cpp" />
-        <option value="$PROJECT_DIR$/Zombiez/src/Human.cpp" />
         <option value="$PROJECT_DIR$/Zombiez/src/main.cpp" />
-        <option value="$PROJECT_DIR$/Zombiez/include/MainGame.h" />
         <option value="$PROJECT_DIR$/Zombiez/include/Level.h" />
-        <option value="$PROJECT_DIR$/Zombiez/include/Human.h" />
-        <option value="$PROJECT_DIR$/Zombiez/include/RNG.h" />
         <option value="$PROJECT_DIR$/Zombiez/src/MainGame.cpp" />
         <option value="$PROJECT_DIR$/Zombiez/src/Level.cpp" />
+        <option value="$PROJECT_DIR$/Zombiez/include/RNG.h" />
+        <option value="$PROJECT_DIR$/Zombiez/include/MainGame.h" />
+        <option value="$PROJECT_DIR$/Zombiez/include/Human.h" />
+        <option value="$PROJECT_DIR$/Zombiez/include/Actor.h" />
+        <option value="$PROJECT_DIR$/Zombiez/src/Actor.cpp" />
+        <option value="$PROJECT_DIR$/Zombiez/src/Human.cpp" />
       </list>
     </option>
   </component>
@@ -237,6 +226,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -270,7 +260,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,14 +324,15 @@
       <workItem from="1532307888419" duration="9324000" />
       <workItem from="1532408366646" duration="17948000" />
       <workItem from="1532590442064" duration="24844000" />
+      <workItem from="1532734917637" duration="2181000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102951000" />
+    <option name="totallyTimeSpent" value="105132000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="269" y="75" width="1440" height="928" extended-state="0" />
+    <frame x="240" y="75" width="1440" height="928" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20277777" />
@@ -350,12 +340,12 @@
       <window_info anchor="bottom" id="Messages" order="9" weight="0.37704918" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32777116" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3056206" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32893" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3056206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" auto_hide="true" id="Debug" order="3" weight="0.41569087" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -365,23 +355,23 @@
       <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32893" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18682022" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32893" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.29558998" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32777116" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42073897" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.38140643" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32893" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32893" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32777116" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.38140643" />
       <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -647,9 +637,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="792">
           <caret line="44" selection-start-line="44" selection-end-line="44" />
-          <folding>
-            <element signature="e#14#36#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -674,16 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/src/Actor.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="37" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zombiez/src/Player.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -704,16 +681,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/include/Actor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
-          <folding>
-            <element signature="e#14#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zombiez/include/Updatable.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -721,19 +688,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/include/MainGame.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="31" column="3" selection-start-line="31" selection-start-column="3" selection-end-line="31" selection-end-column="3" />
-          <folding>
-            <element signature="e#14#30#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
+        <state relative-caret-position="53226">
           <caret line="2957" selection-start-line="2957" selection-end-line="2957" />
         </state>
       </provider>
@@ -742,13 +699,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="42" selection-start-line="4" selection-start-column="42" selection-end-line="4" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/src/Human.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -762,19 +712,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/include/Human.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding>
-            <element signature="e#14#44#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Zombiez/src/MainGame.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="2772">
           <caret line="154" column="30" selection-start-line="154" selection-start-column="30" selection-end-line="154" selection-end-column="30" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
@@ -782,17 +722,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/include/RNG.h">
+    <entry file="file://$PROJECT_DIR$/Zombiez/src/Level.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="88">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Zombiez/src/Level.cpp">
+    <entry file="file://$PROJECT_DIR$/Zombiez/include/RNG.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="149" column="3" selection-start-line="149" selection-start-column="3" selection-end-line="149" selection-end-column="3" />
+        <state relative-caret-position="342">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zombiez/include/MainGame.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="31" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#14#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zombiez/include/Human.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+          <folding>
+            <element signature="e#14#44#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zombiez/include/Actor.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="8" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <element signature="e#14#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zombiez/src/Actor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="35" column="16" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Zombiez/src/Human.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

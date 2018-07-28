@@ -14,6 +14,13 @@ public:
         return random;
     }
 
+    float getFloat(float min, float max)
+    {
+        std::uniform_real_distribution<float> dis(min, max);
+        float random = dis(gen);
+        return random;
+    }
+
     double getRandomDouble(double min, double max)
     {
         std::uniform_real_distribution<double> dis(min, max);

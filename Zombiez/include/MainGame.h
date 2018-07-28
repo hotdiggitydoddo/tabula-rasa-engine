@@ -16,6 +16,8 @@
 #include "Level.h"
 #include "RNG.h"
 
+#define GLM_ENABLE_EXPERIMENTAL
+
 enum class GameState
 {
     PLAY, EXIT
