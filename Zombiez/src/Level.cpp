@@ -4,7 +4,12 @@
 #include <TabulaRasa/ResourceManager.h>
 #include <MainGame.h>
 #include "Human.h"
+#include "Zombie.h"
 #include "Level.h"
+
+
+
+
 
 void Level::Init(TabulaRasa::InputManager* inputManager, TabulaRasa::Camera2D* camera)
 {
@@ -16,28 +21,38 @@ void Level::Init(TabulaRasa::InputManager* inputManager, TabulaRasa::Camera2D* c
 
     _actors.push_back(_player);
 
-    for (int i = 0; i < 10; ++i)
+    for (int i = 0; i < _numHumans; i++)
     {
-        std::cout << MainGame::RandomEngine.getRandom(20) << std::endl;
-    }
-    for (int i = 0; i < 100; i++)
-    {
-        glm::ivec2 pos(
-            MainGame::RandomEngine.getRandomInt(2, GetWidth() - 2),
-            MainGame::RandomEngine.getRandomInt(2, GetHeight() - 2)
-        );
+//        glm::ivec2 pos(
+//            MainGame::RandomEngine.getRandomInt(2, GetWidth() - 2),
+//            MainGame::RandomEngine.getRandomInt(2, GetHeight() - 2)
+//        );
 
         Human* h = new Human(
-            pos * TILE_WIDTH,
+            GetRandomFloorPosition() * TILE_WIDTH,
             glm::vec2(MainGame::RandomEngine.getRandomDouble(-1, 1),
                       MainGame::RandomEngine.getRandomDouble(-1, 1)),
-            MainGame::RandomEngine.getRandomDouble(1.0f, 4.0f));
+            MainGame::RandomEngine.getRandomDouble(0.20f, 4.0f));
 
         h->Init(this);
 
         _actors.push_back(h);
     }
+
+    for (auto& pos : _zombieSpawnPositions)
+    {
+        Zombie* z = new Zombie(
+            pos,
+            glm::vec2(MainGame::RandomEngine.getRandomDouble(-1, 1),
+                      MainGame::RandomEngine.getRandomDouble(-1, 1)),
+            MainGame::RandomEngine.getRandomDouble(1.0f, 4.0f));
+
+        z->Init(this);
+
+        _actors.push_back(z);
+    }
 }
+
 void Level::Update()
 {
     _player->HandleInput();
@@ -47,13 +62,27 @@ void Level::Update()
         actor->Update();
     }
 
-    for (int i = 0; i < _actors.size(); i++)
-    {
-        for (int j = i + 1; j < _actors.size(); j++)
-        {
-            _actors[i]->CollideWithActor(_actors[j]);
-        }
-    }
+//    for (int i = 0; i < _actors.size(); i++)
+//    {
+//        for (int j = 0; j < _actors.size(); j++)
+//        {
+//            if (i == j)
+//                continue;
+//            if (_actors[i]->CollideWithActor(_actors[j]))
+//            {
+//                if (auto* zombie = dynamic_cast<Zombie*>(_actors[j]))
+//                {
+//                    if (dynamic_cast<Human*>(_actors[i]) == nullptr)
+//                        continue;
+//
+//                    _actors[i] = (new Zombie(_actors[i]->GetPosition(), {1, 1}));
+//                    _actors[i]->Init(this);
+//                    //delete _actors[i];
+//                    //_actors[i] = _actors.back();
+//                }
+//            }
+//        }
+//    }
 }
 void Level::Draw(TabulaRasa::SpriteBatch& spriteBatch)
 {
@@ -129,10 +158,12 @@ Level::Level(const std::string& mapPath)
                 case '@':
                     _playerSpawnPos.x = x * TILE_WIDTH;
                     _playerSpawnPos.y = y * TILE_WIDTH;
+                    tile = '.';
                     break;
 
                 case 'Z':
                     _zombieSpawnPositions.emplace_back(x * TILE_WIDTH, y * TILE_WIDTH);
+                    tile = '.';
                     break;
 
                 case '.':
@@ -178,6 +209,21 @@ glm::ivec2 Level::WorldToTilePos(const glm::vec2& worldPos)
 glm::vec2 Level::TileCenterPosFromGridPos(int x, int y)
 {
     return glm::vec2(x * TILE_WIDTH + (TILE_WIDTH / 2), y * TILE_WIDTH + (TILE_WIDTH / 2));
+}
+
+glm::ivec2 Level::GetRandomFloorPosition()
+{
+    while (true)
+    {
+        glm::ivec2 pos(
+            MainGame::RandomEngine.getRandomInt(3, GetWidth() - 3),
+            MainGame::RandomEngine.getRandomInt(3, GetHeight() - 3)
+        );
+
+        if (_map[pos.y][pos.x] != '.')
+            continue;
+        return pos;
+    }
 }
 
 

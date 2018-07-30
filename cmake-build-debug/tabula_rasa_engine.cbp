@@ -262,6 +262,9 @@
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Updatable.h">
 			<Option target="zombiez"/>
 		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/include/Zombie.h">
+			<Option target="zombiez"/>
+		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.cpp">
 			<Option target="zombiez"/>
 		</Unit>
@@ -278,6 +281,9 @@
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.cpp">
+			<Option target="zombiez"/>
+		</Unit>
+		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Zombie.cpp">
 			<Option target="zombiez"/>
 		</Unit>
 		<Unit filename="/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/main.cpp">

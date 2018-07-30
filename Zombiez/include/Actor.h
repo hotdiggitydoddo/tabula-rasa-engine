@@ -14,8 +14,8 @@ public:
     virtual void Update() = 0;
     virtual ~Actor() { _level = nullptr; }
     bool CollideWithActor(Actor* other);
-
-
+    glm::vec2 GetDirection() { return _direction; }
+    float GetSpeed() { return _speed; }
 protected:
     bool CollideWithLevel();
     void CheckTilePosition(std::vector<glm::ivec2>& collidedTilePositions, float x, float y);

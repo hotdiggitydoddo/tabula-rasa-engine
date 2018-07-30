@@ -28,7 +28,9 @@ MainGame::~MainGame()
 void MainGame::InitSystems()
 {
     TabulaRasa::Init();
-    RandomEngine.seed(10);
+
+    //RandomEngine.seed(10); creates an error with 400 humans
+    RandomEngine.seed(1);
 
     _window.Create("Zombiez!", _screenWidth, _screenHeight, 0);
     glClearColor(0.7f, 0.7f, 0.7f, 1.0f);

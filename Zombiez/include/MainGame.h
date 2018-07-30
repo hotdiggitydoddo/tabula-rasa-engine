@@ -18,6 +18,9 @@
 
 #define GLM_ENABLE_EXPERIMENTAL
 
+const float DEG_TO_RAD = static_cast<const float>(M_PI / 180.0f);
+const float RAD_TO_DEG = static_cast<const float>(180.0f /  M_PI);
+
 enum class GameState
 {
     PLAY, EXIT

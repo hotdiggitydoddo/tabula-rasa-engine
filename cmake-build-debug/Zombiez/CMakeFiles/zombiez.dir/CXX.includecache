@@ -186,6 +186,12 @@ random
 
 ../Zombiez/include/Updatable.h
 
+../Zombiez/include/Zombie.h
+Actor.h
+../Zombiez/include/Actor.h
+TabulaRasa/Vertex.h
+../Zombiez/include/TabulaRasa/Vertex.h
+
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.cpp
 Actor.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.h
@@ -219,6 +225,8 @@ MainGame.h
 -
 Human.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
+Zombie.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Zombie.h
 Level.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
 
@@ -245,6 +253,16 @@ Player.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.h
 Level.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
+
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Zombie.cpp
+Zombie.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Zombie.h
+Human.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
+MainGame.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/MainGame.h
+glm/gtx/rotate_vector.hpp
+-
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/main.cpp
 MainGame.h
