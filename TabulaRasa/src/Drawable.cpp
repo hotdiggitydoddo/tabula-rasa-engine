@@ -12,7 +12,7 @@ Drawable::Drawable(glm::vec2 pos, const std::string& texturePath, float scale, T
 
 void Drawable::Draw(TabulaRasa::SpriteBatch& spriteBatch)
 {
-    glm::vec4 pos((_position.x) * _scale, (_position.y) * _scale, _texture.width * _scale, _texture.height * _scale);
+    glm::vec4 pos((_position.x), (_position.y), _texture.width * _scale, _texture.height * _scale);
     glm::vec4 uv(0.0f, 0.0f, 1.0f, 1.0f);
 
     spriteBatch.Draw(pos, uv, _texture.id, 0.0f, _color);

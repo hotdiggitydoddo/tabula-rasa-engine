@@ -1,5 +1,4 @@
 #include "Human.h"
-
 #include <glm/gtx/rotate_vector.hpp>
 
 void Human::Update()
@@ -16,8 +15,6 @@ void Human::Update()
     }
 
     Actor::Update();
-
-
 
     for (auto& actor : *(_level->GetActors()))
     {

@@ -26,6 +26,10 @@ struct Glyph
         topLeft.setPosition(destRect.x, destRect.y);
         topLeft.setUV(uvRect.x, uvRect.y + uvRect.w);
 
+        topRight.color = color;
+        topRight.setPosition(destRect.x + destRect.z, destRect.y);
+        topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
+
         bottomLeft.color = color;
         bottomLeft.setPosition(destRect.x, destRect.y + destRect.w);
         bottomLeft.setUV(uvRect.x, uvRect.y);
@@ -33,11 +37,8 @@ struct Glyph
         bottomRight.color = color;
         bottomRight.setPosition(destRect.x + destRect.z, destRect.y + destRect.w);
         bottomRight.setUV(uvRect.x + uvRect.z, uvRect.y);
-
-        topRight.color = color;
-        topRight.setPosition(destRect.x + destRect.z, destRect.y);
-        topRight.setUV(uvRect.x + uvRect.z, uvRect.y + uvRect.w);
     }
+
     GLuint texture;
     float depth;
 

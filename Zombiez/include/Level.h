@@ -4,11 +4,10 @@
 #include <string>
 #include <TabulaRasa/SpriteBatch.h>
 #include <TabulaRasa/Camera2D.h>
+#include <TabulaRasa/InputManager.h>
 
-#include "Actor.h"
-#include "Player.h"
-
-
+class Actor;
+class Player;
 
 class Level
 {
@@ -38,8 +37,6 @@ private:
     glm::ivec2 _playerSpawnPos;
     std::vector<glm::ivec2> _zombieSpawnPositions;
     glm::ivec4 _upperBounds;
-
-
 
     Player* _player;
 };

@@ -1,13 +1,15 @@
 #include <SDL2/SDL_keycode.h>
 #include <algorithm>
 #include <iostream>
-#include "Player.h"
 #include "Level.h"
+#include "Player.h"
+
 
 void Player::Update()
 {
     Actor::Update();
     CollideWithLevel();
+    _gun.Update();
 }
 
 void Player::HandleInput()
@@ -21,11 +23,20 @@ void Player::HandleInput()
         _direction.x = -1;
     else if (_inputManager->IsKeyPressed(SDLK_d))
         _direction.x = 1;
+
+    if (_inputManager->IsKeyPressed(SDLK_SPACE))
+        _gun.Fire(_position, _direction);
 }
 
 Player::~Player()
 {
     _inputManager = nullptr;
+}
+
+void Player::Init(Level* level)
+{
+    Actor::Init(level);
+    _gun.Init(level);
 }
 
 

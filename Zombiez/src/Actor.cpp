@@ -1,12 +1,13 @@
 #include "Actor.h"
 #include "Level.h"
+
 Actor::Actor(glm::vec2 pos, const std::string& texturePath, float scale, TabulaRasa::Color color)
-    : Drawable(pos, texturePath, scale, color), _level(nullptr)
+    : Drawable(pos, texturePath, scale, color),
+      _level(nullptr),
+      _isActive(true)
 {
 
 }
-
-
 
 void Actor::Update()
 {

@@ -28,7 +28,7 @@ void Zombie::Update()
         if (actor == this)
             continue;
 
-        if (dynamic_cast<Zombie*>(actor) == nullptr)
+        if (dynamic_cast<Human*>(actor) != nullptr)
         {
             glm::vec2 distVec = (actor->GetPosition() + actor->GetOrigin()) - (_position + GetOrigin());
             float dist = glm::length(distVec);

@@ -105,6 +105,8 @@ glm/glm.hpp
 -
 Updatable.h
 ../Zombiez/include/Updatable.h
+Level.h
+../Zombiez/include/Level.h
 TabulaRasa/Drawable.h
 -
 
@@ -115,6 +117,16 @@ TabulaRasa/SpriteBatch.h
 -
 Actor.h
 ../Zombiez/include/Actor.h
+
+../Zombiez/include/Gun.h
+string
+-
+vector
+-
+glm/vec2.hpp
+-
+Bullet.h
+../Zombiez/include/Bullet.h
 
 ../Zombiez/include/Human.h
 TabulaRasa/Vertex.h
@@ -133,13 +145,11 @@ TabulaRasa/SpriteBatch.h
 -
 TabulaRasa/Camera2D.h
 -
-Actor.h
-../Zombiez/include/Actor.h
-Player.h
-../Zombiez/include/Player.h
+TabulaRasa/InputManager.h
+-
 
 ../Zombiez/include/MainGame.h
-SDL.h
+SDL2/SDL.h
 -
 OpenGL/OpenGL.h
 -
@@ -179,6 +189,10 @@ TabulaRasa/InputManager.h
 -
 Actor.h
 ../Zombiez/include/Actor.h
+Gun.h
+../Zombiez/include/Gun.h
+Level.h
+../Zombiez/include/Level.h
 
 ../Zombiez/include/RNG.h
 random
@@ -206,6 +220,12 @@ TabulaRasa/GLTexture.h
 TabulaRasa/ResourceManager.h
 -
 
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Gun.cpp
+Gun.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Gun.h
+Level.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
+
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.cpp
 Human.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
@@ -215,20 +235,22 @@ glm/gtx/rotate_vector.hpp
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.cpp
 fstream
 -
-TabulaRasa/Errors.h
--
 iostream
+-
+TabulaRasa/Errors.h
 -
 TabulaRasa/ResourceManager.h
 -
 MainGame.h
--
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/MainGame.h
+Actor.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Actor.h
 Human.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Human.h
 Zombie.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Zombie.h
-Level.h
-/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
+Player.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/MainGame.cpp
 MainGame.h
@@ -249,10 +271,10 @@ algorithm
 -
 iostream
 -
-Player.h
-/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.h
 Level.h
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Level.h
+Player.h
+/Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Player.h
 
 /Users/ryan/Projects/tabula-rasa-engine/Zombiez/src/Zombie.cpp
 Zombie.h

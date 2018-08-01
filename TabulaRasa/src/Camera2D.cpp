@@ -37,8 +37,6 @@ void Camera2D::Update()
     if (!_needsMatrixUpdate)
         return;
 
-
-
     // Camera Translation
     glm::vec3 translate(-_position.x + (_screenWidth / 2), -_position.y + (_screenHeight / 2), 0.0f);
     //glm::vec3 translate(_position.x, _position.y, 0.0f);

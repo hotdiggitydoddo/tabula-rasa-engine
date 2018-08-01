@@ -16,7 +16,6 @@ MainGame::MainGame(int width, int height, unsigned int seed)
     _maxFps(60.0f),
     _currentLevelIndex(-1)
 {
-
 }
 
 MainGame::~MainGame()
@@ -29,20 +28,13 @@ void MainGame::InitSystems()
 {
     TabulaRasa::Init();
 
-    //RandomEngine.seed(10); creates an error with 400 humans
     RandomEngine.seed(1);
-
     _window.Create("Zombiez!", _screenWidth, _screenHeight, 0);
     glClearColor(0.7f, 0.7f, 0.7f, 1.0f);
     InitShaders();
     _spriteBatch.Init();
     _fpsLimiter.Init(_maxFps);
     _camera.Init(_screenWidth, _screenHeight);
-
-    InitLevels();
-    _currentLevelIndex = 0;
-
-    _gameState = GameState::PLAY;
 }
 
 void MainGame::InitShaders()
@@ -57,15 +49,15 @@ void MainGame::InitShaders()
 void MainGame::Run()
 {
     InitSystems();
+    InitLevels();
+    _currentLevelIndex = 0;
+    _gameState = GameState::PLAY;
     Update();
 }
 
 void MainGame::ProcessInput()
 {
     SDL_Event event;
-
-    const float CAMERA_SPEED = 2.0f;
-    const float SCALE_SPEED = 0.1f;
 
     while (SDL_PollEvent(&event))
     {
@@ -91,35 +83,7 @@ void MainGame::ProcessInput()
                 break;
         }
     }
-
-    /*if (_inputManager.IsKeyPressed(SDLK_w))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(0.0f, -CAMERA_SPEED));
-    else if (_inputManager.IsKeyPressed(SDLK_s))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(0.0f, +CAMERA_SPEED));
-
-    if (_inputManager.IsKeyPressed(SDLK_a))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(+CAMERA_SPEED, 0.0f));
-    else if (_inputManager.IsKeyPressed(SDLK_d))
-        _camera.SetPosition(_camera.GetPosition() + glm::vec2(-CAMERA_SPEED, 0.0f));
-
-    if (_inputManager.IsKeyPressed(SDLK_q))
-        _camera.SetScale(_camera.GetScale() + SCALE_SPEED);
-    else if (_inputManager.IsKeyPressed(SDLK_e))
-        _camera.SetScale(_camera.GetScale() - SCALE_SPEED);*/
-
-    /*if (_inputManager.IsKeyPressed(SDL_BUTTON_LEFT))
-    {
-        glm::vec2 mouseCoords = _inputManager.GetMouseCoords();
-        mouseCoords = _camera.ScreenToWorld(mouseCoords);
-
-        glm::vec2 playerPos(0.0f);
-        glm::vec2 direction = mouseCoords - playerPos;
-        direction = glm::normalize(direction);
-
-        _bullets.emplace_back(Bullet(playerPos, direction, 3.0f, 1000));
-    }*/
 }
-
 
 void MainGame::Update()
 {
@@ -132,26 +96,11 @@ void MainGame::Update()
         _levels[_currentLevelIndex]->Update();
         _camera.Update();
 
-        /*for (int i = 0; i < _bullets.size();)
-        {
-            _bullets[i].Update();
-            if (!_bullets[i].IsAlive())
-            {
-                _bullets[i] = _bullets.back();
-                _bullets.pop_back();
-            }
-            else
-            {
-                i++;
-            }
-        }
-*/
-
         Draw();
 
         _fps = _fpsLimiter.EndFrame();
 
-        // print only once every 1000 frames
+        // print only once every 10 frames
         static int frameCounter = 0;
         frameCounter++;
         if (frameCounter == 10)
